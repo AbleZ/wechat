@@ -1,0 +1,55 @@
+/* pages/home/home.wxss */
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5rpx;
+}
+
+.card_view {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 4px 1px 1px #ccc;
+  margin: 8px;
+  padding: 2px;
+  position: relative;
+}
+
+.list_item_top {
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx;
+  margin-top: 10rpx;
+}
+
+.list_item_avatar {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.list_item_title {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.list_item_content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+
+.text {
+  white-space: pre-line;
+  margin-right: 20rpx;
+}
+
+.text_content{
+  white-space: pre-line;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  color: #999;
+}

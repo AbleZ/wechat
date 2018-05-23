@@ -1,0 +1,26 @@
+/* pages/demo/demo.wxss */
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  width: 200rpx;
+}
+
+.form-item {
+  display: flex;
+  line-height: 64rpx;
+  padding: 20rpx;
+}
+
+.label {
+  width: 180rpx;
+}
+
+.input-text {
+  border-bottom: 1px solid black;
+  margin-left: 10rpx;
+  width: 300rpx;
+}

@@ -1,0 +1,18 @@
+<!--pages/articletype/articletype.wxml-->
+<view>
+
+  <scroll-view scroll-x="true" class="tab_layout" scroll-left="{{scrollLeft}}">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view class="tab-item {{currentTab == index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item.name}}</view>
+    </block>
+  </scroll-view>
+
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" data-cid="1" style="height:{{winHeight}}rpx">
+    <swiper-item wx:for="{{tabs}}" wx:key="*this">
+
+      <view>{{item.name}}</view>
+      
+    </swiper-item>
+  </swiper>
+
+</view>

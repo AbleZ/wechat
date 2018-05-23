@@ -1,0 +1,7 @@
+<view class="container">
+
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"  bindtap="bindRequest"> primary </button>
+
+<view class='text_content'>{{message}}</view>
+
+</view>

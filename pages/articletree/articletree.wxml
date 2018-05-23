@@ -1,0 +1,13 @@
+<!--pages/articletree/articletree.wxml-->
+<view class='list_item card_view' wx:for="{{listItems}}" wx:key="" bindtap='onItemClick' data-id="{{index}}">
+<!--  item.children[0].id  -->
+
+  <view class='list_item_top'>
+    <label class='item_title text'>{{item.name}}</label>
+  </view>
+  <!-- 嵌套循环，列表中的字列表为循环体 -->
+  <view class='list_item_content' wx:for="{{item.children}}" wx:key="">
+    <label class='text_content'>{{item.name}}</label>
+  </view>
+
+</view>

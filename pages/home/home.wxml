@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+
+<!--  轮播图  -->
+<view class='section'>
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{imgUrls}}" wx:key="">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!--  文章列表  -->
+<view class='list_item card_view' wx:for="{{listItems}}" wx:key="" bindtap='onItemClick' data-link="{{item.link}}">
+
+  <view class='list_item_top'>
+    <image class='list_item_avatar' src='../../image/avatar.png' />
+    <label class='item_title text'>{{item.title}}</label>
+  </view>
+
+  <view class='list_item_content'>
+    <label class='text_content'>作者：</label>
+    <label class='item_author text_content'>{{item.author}}</label>
+    <label class='item_chapterName text_content'>{{item.chapterName}}</label>
+    <label class='item_niceDate text_content'>{{item.niceDate}}</label>
+  </view>
+
+</view>

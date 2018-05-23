@@ -1,0 +1,45 @@
+/* pages/articletype/articletype.wxss */
+
+.tab_layout {
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.tab-item {
+  /*  选中条目  */
+  margin: 0 36rpx;
+  display: inline-block;
+}
+
+.tab-content {
+  margin-top: 84rpx;
+}
+
+.tab-item.active {
+  /*  选中条目的文字  */
+  color: #4675f9;
+  position: relative;
+}
+
+.tab-item.active:after {
+  /*  下划线  */
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 99rpx;
+  background: #4675f9;
+  position: absolute;
+  bottom: 0;
+  left: 10rpx;
+  border-radius: 16rpx;
+}

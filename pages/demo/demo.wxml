@@ -1,0 +1,23 @@
+<!--pages/demo/demo.wxml-->
+<text style='float:center;'>实验微信小程序的布局方方式</text>
+
+<view class='btn-group'>
+  <button class='button' type='primary' size='mini'>OK</button>
+  <button class='button' type='primary' size='mini' style="background-color:gray; margin-left: -50rpx;">Cancel</button>
+</view>
+
+<view>
+  <input placeholder='请输入用户名'></input>
+</view>
+
+<view class='form-item'>
+  <label class='label'>用户名:</label>
+  <input maxlength="40" bindinput="cltContcNmCnChange" placeholder="请输入用户名" class='input-text' value="{{cltContcNmCn}}" />
+  <span style="color:red">*</span>
+</view>
+
+<view class='form-item'>
+  <label class='label'>密码:</label>
+  <input maxlength="40" bindinput="cltContcNmCnChange" placeholder="请输入密码" class='input-text' value="{{cltContcNmCn}}" />
+  <span style="color:red">*</span>
+</view>

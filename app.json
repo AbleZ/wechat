@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/articletree/articletree",
+    "pages/navigation/navigation",
+    "pages/project/project",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/request/request",
+    "pages/webview/webview",
+    "pages/articletype/articletype",
+    "pages/demo/demo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MyTest",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#AAAAAA",
+    "selectedColor": "#09bb07",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "image/ic_home0.png",
+        "selectedIconPath": "image/ic_home1.png"
+      },
+      {
+        "pagePath": "pages/articletree/articletree",
+        "text": "知识体系",
+        "iconPath": "image/ic_articletree0.png",
+        "selectedIconPath": "image/ic_articletree1.png"
+      },
+      {
+        "pagePath": "pages/navigation/navigation",
+        "text": "导航",
+        "iconPath": "image/ic_navigation0.png",
+        "selectedIconPath": "image/ic_navigation1.png"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "text": "项目",
+        "iconPath": "image/ic_project0.png",
+        "selectedIconPath": "image/ic_project1.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "我的",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

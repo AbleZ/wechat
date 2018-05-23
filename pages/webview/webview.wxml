@@ -1,0 +1,5 @@
+<!--pages/webview/webview.wxml-->
+<span style="color:#ff0000;">
+   <web-view src="{{link}}"></web-view> 
+  <!-- <web-view src="https://www.baidu.com"></web-view> -->
+</span>

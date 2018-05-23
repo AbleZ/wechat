@@ -1,0 +1,52 @@
+/* pages/articletree/articletree.wxss */
+
+.list_item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5rpx;
+}
+
+.card_view {
+  border: 1rpx solid #eee;
+  border-radius: 5rpx;
+  background-color: #fff;
+  box-shadow: 4rpx 1rpx 1rpx #ccc;
+  margin: 8rpx;
+  margin-right: 20rpx;
+  padding: 2rpx;
+  position: relative;
+}
+
+.text {
+  white-space: pre-line;
+  margin-right: 20rpx;
+}
+
+.list_item_top{
+  display:flex;
+  width: 100%;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+}
+
+.list_item_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+/* .item_title{
+display: flex;
+
+} */
+
+.text_content{
+  white-space: pre-line;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  color: #999;
+}
