@@ -3,11 +3,10 @@
 .list-item {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: 5rpx;
 }
 
-.card_view {
+.card-view {
   border: 1px solid #eee;
   border-radius: 5px;
   background-color: #fff;
@@ -17,39 +16,40 @@
   position: relative;
 }
 
-.list_item_top {
+.item-top {
   display: flex;
   flex-direction: row;
   margin: 10rpx;
-  margin-top: 10rpx;
 }
 
-.list_item_avatar {
-  width: 80rpx;
-  height: 80rpx;
+.item-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  flex-shrink: 0;
+  flex-basis: 60rpx;
 }
 
-.list_item_title {
-  display: flex;
-  flex-direction: column;
+.item-title {
   margin: 10px;
+  justify-content: center;
+  align-self: center;
 }
 
-.list_item_content {
+.item-content {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10rpx;
-  margin-top: 10rpx;
+  margin: 10rpx 0rpx 10rpx 30rpx;
 }
 
-.text {
+.text-title {
   white-space: pre-line;
-  margin-right: 20rpx;
+  margin: 0rpx 20rpx;
+  font-size: 35rpx;
 }
 
-.text_content{
+.text-content {
   white-space: pre-line;
   margin-right: 20rpx;
-  font-size: 30rpx;
+  font-size: 25rpx;
   color: #999;
 }

@@ -16,7 +16,7 @@
 /*  选中条目  */
 
 .tab-item {
-  margin: 0 36rpx;
+  margin: 0 30rpx;
   display: inline-block;
 }
 
@@ -45,8 +45,6 @@
   border-radius: 16rpx;
 }
 
-/*  */
-
 .item-ans {
   width: 100%;
   display: flex;
@@ -58,80 +56,55 @@
   border-bottom: 1px solid #f2f2f2;
 }
 
-/*  */
-
-/*  */
-
-.avatar {
-  width: 80rpx;
-  height: 80rpx;
+.item-top {
+  display: flex;
   position: relative;
   padding-right: 30rpx;
 }
 
-/*  */
 
-.avatar .img {
-  width: 100%;
-  height: 100%;
+.img-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  flex-shrink: 0;
+  /* flex-basis: 60rpx; */
 }
 
-.avatar .doyen {
-  width: 40rpx;
-  height: 40rpx;
-  position: absolute;
-  bottom: -2px;
-  right: 20rpx;
-}
-
-.expertInfo {
-  font-size: 12px;
-  flex-grow: 2;
+.author {
+  font-size: 24rpx;
   color: #b0b0b0;
-  line-height: 1.5em;
 }
 
-.expertInfo .title {
-  font-size: 16px;
+.title {
+  display: -webkit-box;
+  font-size: 30rpx;
   color: #000;
-  margin-bottom: 6px;
+  margin: 10rpx 0rpx 5rpx 10rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.expertInfo .desc text {
+ .desc {
   display: -webkit-box;
   font-size: 28rpx;
   color: #000;
-  line-height: 40rpx;
   word-break: break-all;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 20rpx 0rpx;
 }
 
-.askBtn {
-  width: 120rpx;
-  height: 60rpx;
-  line-height: 60rpx;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 60rpx;
-  border: 1px solid #4675f9;
-  color: #4675f9;
-}
 
-.scoll-h {
+.scoll-height {
   height: 100%;
 }
 
-.item_view {
-  display: flex;
-  /* flex-direction: row; */
-  flex-grow: row no-wrap;
-  justify-content: space-between;
-}
-
-.envelopePic .img {
+.img-envelopePic {
   width: 150rpx;
   height: 240rpx;
   margin-right: 20rpx;

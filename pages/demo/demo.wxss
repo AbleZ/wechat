@@ -24,3 +24,38 @@
   margin-left: 10rpx;
   width: 300rpx;
 }
+
+.card_view {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 4px 1px 1px #ccc;
+  margin: 8px;
+  padding: 2px;
+  position: relative;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img {
+  width: 50rpx;
+  height: 50rpx;
+  /* position: absolute; */
+}
+
+.text-title {
+  display: -webkit-box;
+  font-size: 28rpx;
+  color: #000;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+}

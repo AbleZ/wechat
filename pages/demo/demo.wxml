@@ -2,7 +2,7 @@
 <text style='float:center;'>实验微信小程序的布局方方式</text>
 
 <view class='btn-group'>
-  <button class='button' type='primary' size='mini'>OK</button>
+  <button class='button' type='primary' size='mini' bindtap='btnOKClick'>OK</button>
   <button class='button' type='primary' size='mini' style="background-color:gray; margin-left: -50rpx;">Cancel</button>
 </view>
 
@@ -20,4 +20,13 @@
   <label class='label'>密码:</label>
   <input maxlength="40" bindinput="cltContcNmCnChange" placeholder="请输入密码" class='input-text' value="{{cltContcNmCn}}" />
   <span style="color:red">*</span>
+</view>
+
+
+<view class='item card_view'>
+
+  <image class='img' src='../../image/avatar.png'></image>
+  <text class='text-title'>WeUI 是一套同微信原生视觉体验一致的基础样式库,由微信官方设计团队为微信内网页和微信小程序量身设计,令用户的使用感知更加统一。</text>
+  <!-- <text>hava fun</text> -->
+
 </view>

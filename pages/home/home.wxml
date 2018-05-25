@@ -5,25 +5,25 @@
   <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
     <block wx:for="{{imgUrls}}" wx:key="">
       <swiper-item>
-        <image src="{{item}}" class="slide-image" width="100%" height="150" />
+        <image src="{{item}}" class="slide-image" style="width:100%; height:300rpx;" />
       </swiper-item>
     </block>
   </swiper>
 </view>
 
 <!--  文章列表  -->
-<view class='list_item card_view' wx:for="{{listItems}}" wx:key="" bindtap='onItemClick' data-link="{{item.link}}">
+<view class='list-item card-view' wx:for="{{listItems}}" wx:key="" bindtap='onItemClick' data-link="{{item.link}}">
 
-  <view class='list_item_top'>
-    <image class='list_item_avatar' src='../../image/avatar.png' />
-    <label class='item_title text'>{{item.title}}</label>
+  <view class='item-top'>
+    <image class='item-avatar' src='../../image/avatar.png' />
+    <label class='item-title text-title'>{{item.title}}</label>
   </view>
 
-  <view class='list_item_content'>
-    <label class='text_content'>作者：</label>
-    <label class='item_author text_content'>{{item.author}}</label>
-    <label class='item_chapterName text_content'>{{item.chapterName}}</label>
-    <label class='item_niceDate text_content'>{{item.niceDate}}</label>
+  <view class='item-content'>
+    <!-- <label class='text-content'>作者：</label> -->
+    <label class='item-author text-content'>作者：{{item.author}}</label>
+    <label class='item-chapterName text-content'>分类：{{item.chapterName}}</label>
+    <label class='item-niceDate text-content'>时间：{{item.niceDate}}</label>
   </view>
 
 </view>
