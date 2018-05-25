@@ -25,6 +25,7 @@ Page({
     // 通过选中的标签id，来获取需要的cid
     var cid = this.data.tabs[e.detail.current].id;
 
+    console.log("cid-----");
     console.log(cid);
 
     // this.getProjectList(cid);

@@ -23,40 +23,28 @@ Page({
     wx.request({
       url: 'http://www.wanandroid.com/tree/json',
       success: function (res) {
-        console.log(res.data);
-
         var itemData = res.data.data;
 
         for (var i in itemData) {
           var childrenData = itemData[i].children;
-
           for (var j in itemData[i].children) {
-
-            var color = itemData[i].children[j];
-
+            var children = itemData[i].children[j];
             var str = Math.floor(Math.random() * 0xf0) + ''
               + Math.floor(Math.random() * 0xf0) + ''
               + Math.floor(Math.random() * 0xf0);
-
-            // color.color = "#" + str;
-            color.color = '#' + (Math.random() * 0xf0f0f0 << 0).toString(16);
-
-            console.log("----" + itemData[i].children[j].name);
-            console.log(itemData[i].children[j].color);
+            // 给map添加一个元素
+            // children.color = "#" + str;
+            children.color = '#' + (Math.random() * 0xf0f0f0 << 0).toString(16);
           }
         }
 
-
-
         console.log(itemData);
-
         that.setData({
           listItems: itemData,
           childrenList: childrenData,
 
         });
 
-        console.log(itemData[0].children);
       }
     })
   },

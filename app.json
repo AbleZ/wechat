@@ -46,13 +46,8 @@
         "text": "项目",
         "iconPath": "image/ic_project0.png",
         "selectedIconPath": "image/ic_project1.png"
-      },
-      {
-        "pagePath": "pages/demo/demo",
-        "text": "我的",
-        "iconPath": "image/my.png",
-        "selectedIconPath": "image/my_selected.png"
       }
+      
     ]
   },
   "networkTimeout": {
